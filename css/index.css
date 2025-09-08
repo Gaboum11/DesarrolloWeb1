@@ -1,0 +1,145 @@
+.menu {
+    margin: 2rem 0 1.2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guia-btn {
+    background: linear-gradient(90deg, #00ffd0 0%, #333 100%);
+    color: #111;
+    font-size: 1.15rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #00ffd033;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    outline: none;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    min-width: 180px;
+    display: inline-block;
+}
+.guia-btn:hover, .guia-btn:focus {
+    background: linear-gradient(90deg, #fff 0%, #00ffd0 100%);
+    color: #111;
+    box-shadow: 0 4px 16px #00ffd055;
+    transform: translateY(-2px) scale(1.04);
+}
+.guia-ejercicios {
+    margin-top: 1.5rem;
+    background: #222;
+    border-radius: 12px;
+    padding: 1.2rem 1.5rem;
+    box-shadow: 0 2px 12px #00ffd033;
+    text-align: left;
+}
+.guia-ejercicios h2 {
+    color: #00ffd0;
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.guia-ejercicios ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.guia-ejercicios li {
+    margin: 0.7rem 0;
+}
+.guia-ejercicios a {
+    color: #111;
+    background: linear-gradient(90deg, #00ffd0 0%, #fff 100%);
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    box-shadow: 0 2px 8px #00ffd033;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    border: none;
+    min-width: 160px;
+    display: inline-block;
+    margin-bottom: 0.2rem;
+    letter-spacing: 1px;
+}
+.guia-ejercicios a:hover, .guia-ejercicios a:focus {
+    background: linear-gradient(90deg, #00ffd0 0%, #333 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px #00ffd055;
+    transform: translateY(-2px) scale(1.04);
+}
+body {
+    background: linear-gradient(135deg, #111 60%, #222 100%);
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    background: rgba(30,30,30,0.95);
+    border-radius: 18px;
+    padding: 2.5rem 3rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+    text-align: center;
+    max-width: 400px;
+}
+.header h2 {
+    font-size: 1.3rem;
+    color: #00ffd0;
+    margin-bottom: 0.2rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow: 0 2px 8px #00ffd055;
+}
+h1 {
+    margin-bottom: 0.3rem;
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-shadow: 0 2px 8px #00ffd033;
+}
+.carnet {
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+    color: #00ffd0;
+    font-weight: 500;
+}
+.desc {
+    margin-bottom: 1.7rem;
+    font-size: 1.08rem;
+    color: #aaa;
+    font-style: italic;
+}
+.ejercicios {
+    list-style: none;
+    padding: 0;
+}
+.ejercicios li {
+    margin: 0.9rem 0;
+}
+a {
+    color: #fff;
+    background: linear-gradient(90deg, #00ffd0 0%, #333 100%);
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    box-shadow: 0 2px 8px #00ffd033;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    border: none;
+}
+a:hover {
+    background: linear-gradient(90deg, #fff 0%, #00ffd0 100%);
+    color: #111;
+    box-shadow: 0 4px 16px #00ffd055;
+}

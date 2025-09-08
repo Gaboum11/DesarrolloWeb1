@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Enrique Martínez Carballo - 20245120</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Gabriel Enrique Martínez Carballo</h1>
+            <p class="carnet">Carnet: 20245120</p>
+        </div>
+        <div class="menu">
+            <button id="guia1Btn" class="guia-btn">Guía 1</button>
+        </div>
+        <div id="guia1Ejercicios" class="guia-ejercicios" style="display:none;">
+            <h2>Ejercicios de la Guía 1</h2>
+            <ul>
+                <li><a href="ejemplo2.html">Ejemplo 2</a></li>
+                <li><a href="estilos_embebidos.html">Estilos Embebidos</a></li>
+                <li><a href="interstellar.html">Interstellar</a></li>
+                <li><a href="paises.html">Paises</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const guia1Btn = document.getElementById('guia1Btn');
+        const guia1Ejercicios = document.getElementById('guia1Ejercicios');
+        guia1Btn.addEventListener('click', () => {
+            guia1Ejercicios.style.display = guia1Ejercicios.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
