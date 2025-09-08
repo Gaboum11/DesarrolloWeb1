@@ -1,0 +1,272 @@
+/* Reset y configuración base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #0a0a0a;
+    color: #e5e5e5;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+#header {
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.titulo-principal {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+.frase {
+    font-size: 1rem;
+    color: #888888;
+    font-weight: 300;
+}
+
+.menu {
+    background-color: #0a0a0a;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.lista-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.enlace {
+    color: #888888;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.enlace:hover {
+    color: #ffffff;
+}
+
+.contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.imagen {
+    margin-bottom: 4rem;
+}
+
+.foto {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.seccion {
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.seccion:last-child {
+    border-bottom: none;
+}
+
+.titulo-seccion {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    letter-spacing: 0.02em;
+}
+
+.texto {
+    margin-bottom: 1.5rem;
+    color: #cccccc;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.personajes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tarjeta-personaje {
+    padding: 1.5rem;
+    background-color: #111111;
+    border: 1px solid #1a1a1a;
+    border-radius: 2px;
+}
+
+.nombre-personaje {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.nombre-actor {
+    font-size: 0.9rem;
+    color: #888888;
+    margin-bottom: 1rem;
+}
+
+.descripcion-personaje {
+    font-size: 0.9rem;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 3rem;
+}
+
+.tabla-datos tr {
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.tabla-datos tr:last-child {
+    border-bottom: none;
+}
+
+.etiqueta-dato {
+    padding: 1rem 0;
+    font-weight: 400;
+    color: #888888;
+    width: 40%;
+    font-size: 0.9rem;
+}
+
+.valor-dato {
+    padding: 1rem 0;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.premios {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #111111;
+    border: 1px solid #1a1a1a;
+    border-radius: 2px;
+}
+
+.titulo-premios {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.lista-premios {
+    list-style: none;
+}
+
+.premio {
+    padding: 0.5rem 0;
+    color: #cccccc;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.premio:last-child {
+    border-bottom: none;
+}
+
+.texto-opinion {
+    margin-bottom: 1.5rem;
+    color: #cccccc;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+#cita-favorita {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #111111;
+    border-left: 3px solid #333333;
+    border-radius: 0 2px 2px 0;
+}
+
+.cita {
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-style: italic;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.autor-cita {
+    font-size: 0.9rem;
+    color: #888888;
+    text-align: right;
+    font-style: normal;
+}
+
+#pie-pagina {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-top: 1px solid #1a1a1a;
+    margin-top: 3rem;
+}
+
+.texto-pie {
+    font-size: 0.9rem;
+    color: #888888;
+    margin-bottom: 1rem;
+}
+
+.derechos {
+    font-size: 0.8rem;
+    color: #666666;
+}
+
+@media (max-width: 768px) {
+    .titulo-principal {
+        font-size: 2.2rem;
+    }
+    
+    .lista-menu {
+        gap: 2rem;
+    }
+    
+    .contenido {
+        padding: 2rem 1rem;
+    }
+    
+    .personajes {
+        grid-template-columns: 1fr;
+    }
+    
+    .etiqueta-dato,
+    .valor-dato {
+        padding: 0.8rem 0;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

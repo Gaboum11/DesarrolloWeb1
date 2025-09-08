@@ -1,0 +1,30 @@
+body {
+    background-color: lightblue;
+}
+
+.container {
+    font-size: 20px;
+}
+
+.main-heading {
+    text-decoration: underline;
+    color: white;
+}
+
+.intro-paragraph {
+    color: navy;
+    font-weight: bold;
+}
+
+.uppercase-paragraph {
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+.italic-text {
+    font-style: italic;
+}
