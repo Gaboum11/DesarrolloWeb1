@@ -14,6 +14,7 @@
         </div>
         <div class="menu">
             <button id="guia1Btn" class="guia-btn">Guía 1</button>
+            <button id="guia2Btn" class="guia-btn">Guía 2</button>
         </div>
         <div id="guia1Ejercicios" class="guia-ejercicios" style="display:none;">
             <h2>Ejercicios de la Guía 1</h2>
@@ -24,12 +25,27 @@
                 <li><a href="Guia1/paises.html">Paises</a></li>
             </ul>
         </div>
+        <div id="guia2Ejercicios" class="guia-ejercicios" style="display:none;">
+            <h2>Ejercicios de la Guía 2</h2>
+            <ul>
+                <li><a href="Guia2/pelicula.html">Película: El discurso del Rey</a></li>
+                <li><a href="Guia2/tablero.html">Tablero de Damas</a></li>
+                <li><a href="Guia2/biografia.html">Mi Biografía</a></li>
+            </ul>
+        </div>
     </div>
     <script>
         const guia1Btn = document.getElementById('guia1Btn');
+        const guia2Btn = document.getElementById('guia2Btn');
         const guia1Ejercicios = document.getElementById('guia1Ejercicios');
+        const guia2Ejercicios = document.getElementById('guia2Ejercicios');
         guia1Btn.addEventListener('click', () => {
             guia1Ejercicios.style.display = guia1Ejercicios.style.display === 'none' ? 'block' : 'none';
+            guia2Ejercicios.style.display = 'none';
+        });
+        guia2Btn.addEventListener('click', () => {
+            guia2Ejercicios.style.display = guia2Ejercicios.style.display === 'none' ? 'block' : 'none';
+            guia1Ejercicios.style.display = 'none';
         });
     </script>
 </body>
