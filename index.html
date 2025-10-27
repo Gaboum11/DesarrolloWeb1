@@ -3,69 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Enrique Martínez Carballo - 20245120</title>
+    <title>Gabriel Martínez - Portafolio Estudiantil</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#curso">Curso</a></li>
+                <li><a href="#guias">Guías</a></li>
+                <li><a href="#foda">FODA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCIÓN: Datos Personales -->
+        <section id="inicio" class="hero">
+            <img src="20245120_Guia2/img/perfil.jpg" alt="Gabriel Martínez" class="foto-perfil">
             <h1>Gabriel Enrique Martínez Carballo</h1>
             <p class="carnet">Carnet: 20245120</p>
-        </div>
-        <div class="menu">
-            <button id="guia1Btn" class="guia-btn">Guía 1</button>
-            <button id="guia2Btn" class="guia-btn">Guía 2</button>
-            <button id="guia3Btn" class="guia-btn">Guía 3</button>
-        </div>
-        <div id="guia1Ejercicios" class="guia-ejercicios" style="display:none;">
-            <h2>Ejercicios de la Guía 1</h2>
-            <ul>
-                <li><a href="20245120_Guia1/ejemplo2.html">Ejemplo 2</a></li>
-                <li><a href="20245120_Guia1/estilos_embebidos.html">Estilos Embebidos</a></li>
-                <li><a href="20245120_Guia1/interstellar.html">Interstellar</a></li>
-                <li><a href="20245120_Guia1/paises.html">Paises</a></li>
-            </ul>
-        </div>
-        <div id="guia2Ejercicios" class="guia-ejercicios" style="display:none;">
-            <h2>Ejercicios de la Guía 2</h2>
-            <ul>
-                <li><a href="20245120_Guia2/pelicula.html">Película: El discurso del Rey</a></li>
-                <li><a href="20245120_Guia2/tablero.html">Tablero de Damas</a></li>
-                <li><a href="20245120_Guia2/biografia.html">Mi Biografía</a></li>
-            </ul>
-        </div>
-        <div id="guia3Ejercicios" class="guia-ejercicios" style="display:none;">
-            <h2>Ejercicios de la Guía 3</h2>
-            <ul>
-                <li><a href="20245120_Guia3/oscares.html">Oscares: Nominaciones</a></li>
-                <li><a href="20245120_Guia3/menu_horizontal.html">Menú Horizontal</a></li>
-                <li><a href="20245120_Guia3/index.html">Viajeros: Tu agencia de viajes</a></li>
-                <li><a href="20245120_Guia3/analisis.html">Cartas</a></li>
-            </ul>
-        </div>
-    </div>
-    <script>
-        const guia1Btn = document.getElementById('guia1Btn');
-        const guia2Btn = document.getElementById('guia2Btn');
-        const guia1Ejercicios = document.getElementById('guia1Ejercicios');
-        const guia2Ejercicios = document.getElementById('guia2Ejercicios');
-        const guia3Ejercicios = document.getElementById('guia3Ejercicios');
+            <p class="bio-breve">Estudiante de Ingeniería de Software apasionado por la tecnología y el desarrollo web.</p>
+        </section>
 
-        guia1Btn.addEventListener('click', () => {
-            guia1Ejercicios.style.display = guia1Ejercicios.style.display === 'none' ? 'block' : 'none';
-            guia2Ejercicios.style.display = 'none';
-            guia3Ejercicios.style.display = 'none';
-        });
-        guia2Btn.addEventListener('click', () => {
-            guia2Ejercicios.style.display = guia2Ejercicios.style.display === 'none' ? 'block' : 'none';
-            guia1Ejercicios.style.display = 'none';
-            guia3Ejercicios.style.display = 'none';
-        });
-        guia3Btn.addEventListener('click', () => {
-            guia3Ejercicios.style.display = guia3Ejercicios.style.display === 'none' ? 'block' : 'none';
-            guia1Ejercicios.style.display = 'none';
-            guia2Ejercicios.style.display = 'none';
-        });
-    </script>
+        <!-- SECCIÓN: Sobre mí -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Soy un estudiante comprometido con el aprendizaje continuo y la innovación tecnológica. Desde pequeño, la curiosidad me llevó a explorar cómo funcionan las cosas, y hoy esa curiosidad se ha transformado en pasión por la programación y el desarrollo web.</p>
+            <p>Creo firmemente que la tecnología tiene el poder de transformar vidas y resolver problemas complejos. Mi objetivo es seguir creciendo como profesional y contribuir con soluciones creativas que impacten positivamente en la sociedad.</p>
+        </section>
+
+        <!-- SECCIÓN: Datos del Curso -->
+        <section id="curso">
+            <h2>Desarrollo Web 1</h2>
+            <div class="curso-info">
+                <div class="info-card">
+                    <h3>Descripción del Curso</h3>
+                    <p>Este curso constituye la primera etapa en la formación de desarrollo web, abarcando los fundamentos esenciales de HTML, CSS y JavaScript, que son los pilares de toda aplicación web moderna.</p>
+                    <p>El curso permite comprender la arquitectura de aplicaciones front-end, el papel de cada tecnología en la creación de aplicaciones modulares, y conocer las mejores prácticas de diseño, así como identificar prácticas desventajosas en el desarrollo de software.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Contenidos del Curso</h3>
+                    <ul>
+                        <li><strong>Introducción al HTML:</strong> Elementos, semántica y atributos</li>
+                        <li><strong>Hojas de Estilo en Cascada (CSS):</strong> Selectores, propiedades y modelo de caja</li>
+                        <li><strong>Maquetación de Sitios Web:</strong> Posicionamiento, diseño responsivo, Flexbox y CSS Grid</li>
+                        <li><strong>Frameworks de Diseño:</strong> Bootstrap, mallas y componentes</li>
+                        <li><strong>Introducción a JavaScript:</strong> Sintaxis, estructuras de control, funciones y POO</li>
+                        <li><strong>DOM y JavaScript Asíncrono:</strong> Manipulación del DOM, JSON, AJAX y consumo de APIs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: Guías de Ejercicios -->
+        <section id="guias">
+            <h2>Guías de Ejercicios</h2>
+            
+            <div class="guias-container">
+                <article class="guia-card">
+                    <h3>Guía 1: Fundamentos HTML y CSS</h3>
+                    <p>Identificación de la estructura básica de documentos web. Aplicación de reglas de estilo CSS mediante estilos embebidos y hojas de estilo externas. Utilización de selectores CSS básicos y propiedades para la manipulación de fuentes y textos.</p>
+                    <div class="ejercicios-links">
+                        <a href="20245120_Guia1/ejemplo2.html">Ejemplo 2</a>
+                        <a href="20245120_Guia1/estilos_embebidos.html">Estilos Embebidos</a>
+                        <a href="20245120_Guia1/interstellar.html">Interstellar</a>
+                        <a href="20245120_Guia1/paises.html">Países</a>
+                    </div>
+                </article>
+
+                <article class="guia-card">
+                    <h3>Guía 2: Selectores Avanzados y Modelo de Cajas</h3>
+                    <p>Utilización y combinación de selectores CSS avanzados. Conocimiento de la utilidad de pseudo-clases y pseudo-elementos CSS. Creación de páginas web utilizando el Modelo de Cajas, identificando sus partes: margin, border, padding y content.</p>
+                    <div class="ejercicios-links">
+                        <a href="20245120_Guia2/pelicula.html">El Discurso del Rey</a>
+                        <a href="20245120_Guia2/tablero.html">Tablero de Damas</a>
+                        <a href="20245120_Guia2/biografia.html">Mi Biografía</a>
+                    </div>
+                </article>
+
+                <article class="guia-card">
+                    <h3>Guía 3: Posicionamiento y Maquetación Web</h3>
+                    <p>Utilización de diferentes tipos de posicionamiento CSS y diferenciación apropiada entre ellos. Aplicación de propiedades CSS relacionadas con la visualización de elementos. Maquetación de sitios web con diseños fijos y fluidos.</p>
+                    <div class="ejercicios-links">
+                        <a href="20245120_Guia3/oscares.html">Oscares</a>
+                        <a href="20245120_Guia3/menu_horizontal.html">Menú Horizontal</a>
+                        <a href="20245120_Guia3/index.html">Viajeros</a>
+                        <a href="20245120_Guia3/analisis.html">Cartas</a>
+                    </div>
+                </article>
+
+                <article class="guia-card">
+                    <h3>Guía 4: Diseño Web Responsivo</h3>
+                    <p>Creación y estilización de formularios utilizando controles de HTML5. Uso correcto de la meta-etiqueta viewport. Definición de media queries para aplicar reglas de estilo según el ancho del viewport. Construcción de páginas web responsivas aplicando los conocimientos adquiridos durante el curso.</p>
+                    <div class="ejercicios-links">
+                        <a href="20245120_Guia4/Ejercicio1/mediaqueries.html">Media Queries</a>
+                        <a href="20245120_Guia4/Ejercicio2/index.html">Viajeros, agencia de viajes</a>
+
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: FODA -->
+        <section id="foda">
+            <h2>FODA sobre el Desempeño</h2>
+            
+            <div class="foda-container">
+                <div class="foda-item fortalezas">
+                    <h3>Fortalezas</h3>
+                    <ul>
+                        <li>Capacidad de aprendizaje rápido y autodidacta</li>
+                        <li>Atención al detalle en el código y diseño</li>
+                        <li>Creatividad para resolver problemas</li>
+                        <li>Conocimiento sólido de HTML y CSS</li>
+                        <li>Persistencia ante desafíos técnicos</li>
+                    </ul>
+                </div>
+
+                <div class="foda-item oportunidades">
+                    <h3>Oportunidades</h3>
+                    <ul>
+                        <li>Expandir conocimientos en JavaScript y frameworks modernos</li>
+                        <li>Colaborar en proyectos open source</li>
+                        <li>Aplicar lo aprendido en proyectos freelance</li>
+                        <li>Networking con profesionales del área</li>
+                        <li>Certificaciones en tecnologías web</li>
+                    </ul>
+                </div>
+
+                <div class="foda-item debilidades">
+                    <h3>Debilidades</h3>
+                    <ul>
+                        <li>Falta de experiencia en proyectos reales de gran escala</li>
+                        <li>Necesidad de mejorar en optimización de rendimiento</li>
+                        <li>Perfeccionismo que a veces ralentiza el desarrollo</li>
+                        <li>Conocimiento limitado en backend</li>
+                    </ul>
+                </div>
+
+                <div class="foda-item amenazas">
+                    <h3>Amenazas</h3>
+                    <ul>
+                        <li>Rápida evolución tecnológica que requiere actualización constante</li>
+                        <li>Competencia en el mercado laboral</li>
+                        <li>Balance entre estudios y proyectos personales</li>
+                        <li>Síndrome del impostor en entornos profesionales</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gabriel Enrique Martínez Carballo | Desarrollo Web 1 | ESEN</p>
+    </footer>
 </body>
 </html>
