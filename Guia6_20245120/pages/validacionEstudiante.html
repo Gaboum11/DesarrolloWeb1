@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/stylesFunciones.css" rel="stylesheet" />
+    <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+    <title>Validación de formulario estudiante</title>
+</head>
+
+<body>
+    <header>
+        <div class="px-3 py-2 text-bg-dark fixed-top">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="../indexFunciones.html"
+                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                        <img src="../img/js.png" alt="" width="32" height="32" class="me-2" />
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small nav-bar">
+                        <li class="text-center">
+                            <a href="recursividad.html" class="nav-link text-white">
+                                <i class="bi bi-arrow-clockwise bi-2 d-block"></i>
+                                Recursividad
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="tabla.html" class="nav-link text-white">
+                                <i class="bi bi-table bi-2 d-block"></i>
+                                Creando una Tabla
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="formulario.html" class="nav-link text-white">
+                                <i class="bi bi-ui-checks bi-2 d-block"></i>
+                                Formulario
+                            </a>
+                        </li>
+                        <li class="text-center nav-bar-li-active">
+                            <a href="validacionEstudiante.html" class="nav-link text-white">
+                                <i class="bi bi-check-circle bi-2 d-block"></i>
+                                Validación
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-12 shadow-lg p-3 mt-5 bg-body rounded">
+                <h3>Validación de información de estudiante</h3>
+                <p class="text-muted">Utiliza expresiones regulares para validar los campos del formulario</p>
+                <form id="idFormEstudiante">
+                    <div class="row mb-3">
+                        <label for="idCarnet" class="col-sm-3 col-form-label">Carnet:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="idCarnet" placeholder="AB001" maxlength="5" />
+                            <div class="form-text">Formato: 2 letras y 3 números (Ejemplo: AB001)</div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="idNombre" class="col-sm-3 col-form-label">Nombre completo:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="idNombre" placeholder="Juan Pérez" />
+                            <div class="form-text">Solo letras y espacios</div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="idDUI" class="col-sm-3 col-form-label">DUI:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="idDUI" placeholder="12345678-9" maxlength="10" />
+                            <div class="form-text">Formato: ########-# (8 dígitos, guión, 1 dígito)</div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="idNIT" class="col-sm-3 col-form-label">NIT:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="idNIT" placeholder="1234-567890-123-4" maxlength="17" />
+                            <div class="form-text">Formato: ####-######-###-# (4, 6, 3, 1 dígitos separados por guiones)</div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="idFechaNacimiento" class="col-sm-3 col-form-label">Fecha de nacimiento:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="idFechaNacimiento" placeholder="dd/mm/yyyy" maxlength="10" />
+                            <div class="form-text">Formato: dd/mm/yyyy</div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="idEmail" class="col-sm-3 col-form-label">Correo electrónico:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="idEmail" placeholder="ejemplo@correo.com" />
+                            <div class="form-text">Formato de email válido</div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="idEdad" class="col-sm-3 col-form-label">Edad:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="idEdad" placeholder="18" maxlength="3" />
+                            <div class="form-text">Solo números</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary" id="idBtnValidar">
+                                <i class="bi bi-check-circle"></i> Validar formulario
+                            </button>
+                            <button type="button" class="btn btn-secondary" id="idBtnLimpiar">
+                                <i class="bi bi-x-circle"></i> Limpiar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12 shadow-lg p-3 bg-body rounded">
+                <h4>Resultado de validación</h4>
+                <div id="idResultado" class="alert alert-info">
+                    Complete el formulario y presione "Validar formulario"
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/validacionEstudiante.js"></script>
+</body>
+
+</html>
